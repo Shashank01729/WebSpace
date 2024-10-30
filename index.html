@@ -13,9 +13,18 @@
     />
     <!-- Core theme CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
   </head>
 
   <body>
+    
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </nav>
+
     <!-- Parallax Pixel Background Animation -->
     <section class="animated-background">
       <div id="stars1"></div>
@@ -71,7 +80,7 @@
       </a>
       <a
         class="link"
-        href="https://www.hackerrank.com/shashankkrpande1"
+        href="https://www.hackerrank.com/profile/12217166Shashank"
         target="_blank"
       >
         <i class="fab fa-hackerrank">&nbsp;</i>HackerRank
@@ -90,9 +99,157 @@
       >
         <i class="">&nbsp;</i>PyDocs
       </a>
-      
+      <a 
+        class="link" 
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=shashankkrpandey123@gmail.com&su=Subject%20Here&body=Body%20Here" 
+        target="_blank"
+      >
+        <i class="">&nbsp;</i>Contact Me
+      </a>
     </div>
+    
     <div id="hashtag">#BeHappy❤</div>
     <div id="hashtag">#UnlockYourPotential🔓</div>
+
+    <!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid"> <!-- Added grid container -->
+    <div class="project-card">
+      <h3>Mentor Connect <a href="https://mentor-connect-gamma.vercel.app/" target="_blank"><i class="fas fa-link"></i></a></h3>
+      <p>An automated calendar booking system for scheduling meetings with mentors, integrated with Calendly, and featuring real-time chat and video call capabilities.</p>
+      <p>Technologies: Next.js, Clerk, BotPress, Calendly, GetStream, Tailwind CSS</p>
+      <p>Duration: 08/2024 - Present</p>
+    </div>
+    <div class="project-card">
+      <h3>PyDocs <a href="https://hello-trex-hazel.vercel.app/" target="_blank"><i class="fas fa-link"></i></a></h3>
+      <p>A streamlined Python Documentation site featuring AI-enabled search functionality using Algolia and DocSearch. Built with Docusaurus, it offers robust documentation features and easy navigation.</p>
+      <p>Technologies: Docusaurus (Meta)</p>
+      <p>Duration: 01/2024 - 02/2024</p>
+    </div>
+    <div class="project-card">
+      <h3>AniTunes <a href="https://first-app-anitunes.vercel.app/" target="_blank"><i class="fas fa-link"></i></a></h3>
+      <p>A comprehensive music streaming and social interaction platform that includes functionalities for music streaming, song searching, artist viewing, and real-time chat rooms.</p>
+      <p>Technologies: Angular, NodeJS, MongoDB Atlas, JavaScript, Bootstrap</p>
+      <p>Duration: 02/2024 - 04/2024</p>
+    </div>
+    <div class="project-card">
+      <h3>StudySync <a href="https://shashank01729.github.io/StudySync/" target="_blank"><i class="fas fa-link"></i></a></h3>
+      <p>A front-end design project showcasing responsive website development skills, featuring various sections like Header, Hero, Cards, Testimonials, and Footer.</p>
+      <p>Technologies: HTML, CSS, JavaScript</p>
+      <p>Duration: 12/2023</p>
+    </div>
+    <div class="project-card">
+      <h3>Language Translator <a href="https://github.com/Shashank01729/SIH-23" target="_blank"><i class="fas fa-link"></i></a></h3>
+      <p>An English to Hindi translator developed during SIH’23, featuring multiple functionalities including translation, image upload with Tesseract integration, and dark mode.</p>
+      <p>Technologies: Python, Tkinter, Tesseract, Flask</p>
+      <p>Duration: 09/2023</p>
+    </div>
+  </div> <!-- End of grid container -->
+</section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Programming Languages</h3>
+          <ul class="padul">
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>C# (Unity)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Frameworks</h3>
+          <ul>
+            <li>Angular</li>
+            <li>Node.js</li>
+            <li>Bootstrap</li>
+            <li>Express.js</li>
+            <li>Docusaurus (Meta)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Databases</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Figma</li>
+            <li>Canva</li>
+            <li>Excel</li>
+            <li>PowerPoint</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Return Back Button -->
+    <button class="back-to-top" style="position:sticky;" onclick="scrollToTop()">Return to Top</button>
+
+    <script>
+      // Function to scroll to the top
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+
+      // Smooth scrolling for navbar links
+      // Function to scroll to the top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Show or hide the back-to-top button based on scroll position
+window.addEventListener('scroll', function() {
+  const button = document.querySelector('.back-to-top');
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = 'block'; // Show the button
+  } else {
+    button.style.display = 'none'; // Hide the button
+  }
+});
+
+// Smooth scrolling for navbar links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default anchor click behavior
+
+    const targetId = this.getAttribute('href'); // Get the target section ID
+    const targetElement = document.querySelector(targetId); // Find the target element
+
+    // Scroll to the target element smoothly
+    targetElement.scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+      
+    </script>
+    
   </body>
 </html>
